@@ -1,0 +1,35 @@
+body, html {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	/*letter-spacing: 0.3px;*/
+	color: #333333
+	}
+
+::-webkit-scrollbar {
+    width: 0px ;
+    background: transparent;
+    height:3px;
+}
+
+::-webkit-scrollbar-thumb {
+	width: 0px ;
+	border-radius:10px;
+	background-color: #53a374;
+	height:2px;
+}
+
+::-webkit-scrollbar-button  {
+    height:0px;
+}
+
+
+::-webkit-scrollbar-corner  {
+    display:none;    
+}
+a:focus{
+	border: none;
+}

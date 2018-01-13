@@ -88,22 +88,11 @@ a{
 	margin-left:  17vw;
 }
 .instaCompassImg{
-	/*display: inline;*/
 	padding-right: 1.9vw
-
 }
 .instaNotificationImg{
-	/*display: inline;*/
 	padding-right: 1.9vw
-
-
 }
-.instaProgileImg{
-	/*display: inline;*/
-
-}
-
-
 .navbar-default{
 	-webkit-box-shadow: none;
     box-shadow: none;
@@ -122,11 +111,12 @@ a{
 .profilePic{
 	width: 11vw;
 	height:11vw;
-	/*border:1px solid #939393;*/
 	border-radius: 20vw;
 	text-align: center;
 }
-
+.profilePicCenter{
+	text-align: center;
+}
 .userName{
 	display: inline;
 	font-size: 32px;
@@ -170,8 +160,9 @@ a{
 	font-weight: 600;
 	font-size: 20px;
 	margin-left: .5vw;
-	/*vertical-align: middle;*/
-	/*margin-top: -2vh*/
+}
+.forMobileView{
+	display: none;
 }
 .followersDiv{
 	margin-top: 2vh;
@@ -188,13 +179,7 @@ a{
 	font-size: 16.5px;
 	word-spacing: 1.6px
 }
-.bottomLinks div a{
-	color: #003484;
-	font-size: 12.3px;
-	font-weight: 600;
-	padding-left: 1vw;
-	letter-spacing: .3px
-}
+
 .copyright{
 	float: right;
 	color: #a1a1a1;
@@ -205,21 +190,15 @@ a{
 .postImages{
 	width: 100%;
 	height:300px;
+	margin-top: 5.6vh
 }
 .container1 {
   position: relative;
   width: 33.333333%;
 }
-
-/*.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}*/
-
 .overlay {
   position: absolute;
-  top: 0;
+  top: 5.6vh;
   bottom: 0;
   left: 5%;
   right: 0;
@@ -231,16 +210,32 @@ a{
 }
 
 .container1:hover .overlay {
-  opacity: .3;
+  opacity: .75;
 }
 
 .te {
-  color: white;
-  font-size: 20px;
+  color: #fff;
+  opacity: 1;
+  z-index: 20;
+  font-size: 18px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  top: 45%;
+  left: 5.5vw;
   text-align: center;
+}
+.imgIconns{
+	padding-right: 5vw;
+}
+
+.bottomLinks{
+	margin-top: 10vh;
+	margin-bottom: 5vh
+}
+
+.bottomLinks div a{
+	color: #003484;
+	font-size: 12.3px;
+	font-weight: 600;
+	padding-left: .8vw;
+	letter-spacing: .3px
 }

@@ -4,7 +4,63 @@
 .navbarSearch{
 	display: none;
 }
+.headerColor{
+	background-color: #fff;
+	padding: 13px 5vw;
+}
 
-
-
+.profilePicDiv{
+	margin-top: 3vh;
+}
+.profilePic{
+	width: 18vw;
+	height:18vw;
+}
+.userName{
+	font-size: 25px;
+    font-weight: 400;
+}
+.forPCView{
+	display: none;
+}
+.forMobileView{
+	display: inline;
+}
+.followButton{
+    font-size: 14.5px;
+    padding:4.5px 18vw;
+    margin-left: -3vw;
+    margin-top: .3vh;
+    display: inline; 
+}
+.downArrowButton{
+    padding:7px 3vw;
+}
+.threeDots{
+	margin-left: 3vw;
+}
+.followersDiv{
+	display: none;
+}
+.followersDiv span{
+	margin-right: 2.5vw;
+	margin-bottom: 2vh
+}
+.userStatus{
+	margin-top: 0vh;
+	font-size: 14.5px;
+	word-spacing: 1px
+}
+.postImages{
+	height:140px;
+	margin-top: .2vh;
+	padding:0 !important;
+}
+.container1 {
+	padding:2px !important;
+  width: 33.33%;
+}
+.bottomLinks{
+	display: none;
+}
 }

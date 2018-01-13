@@ -1,0 +1,55 @@
+
+@media only screen and (max-width: 900px){
+
+.navbarSearch,
+.navbarSearchInput,
+.glyphicon-search {
+	display: none;
+}
+
+.navbarSearch{
+	display: inline;
+	margin-left: 11vw
+}
+.navbarSearchInput{
+	border: solid 1px #d9d9d9;
+    border-radius: 3px;
+    color: #262626;
+    font-size: 16px;
+    /*outline: none;*/
+    width: 16vw;
+    padding: 3px 0px 3px 7vw;
+    /*z-index: 2;	display: inline;*/
+    background-color:#fafafa;
+    font-weight: 400;
+    margin-top: 2vh
+}
+.form-control-feedback{
+	position: absolute;
+    right: 9vw;
+    line-height: 18px;
+    pointer-events: none;
+    color: #939393;
+    font-size: 10px;
+}
+.exploreDiv{
+	/*margin-top: 15vh !important;*/
+	display: inline;
+	margin-left:  15.8vw;
+}
+.instaCompassImg{
+	padding-right: 2vw;
+	margin-top: 3vh
+}
+.instaNotificationImg{
+	padding-right: 2vw;
+	margin-top: 3vh
+}
+.instaProgileImg{
+	margin-top: 3vh
+	
+}
+
+
+
+

@@ -1,14 +1,21 @@
 
 @media only screen and (max-width: 480px){
-
-.navbarSearch{
-	display: none;
+body{
+	width: 100vw
 }
-.headerColor{
-	background-color: #fff;
-	padding: 13px 5vw;
+.mobileNavbarDiv{
+	border-bottom: .5px solid #ddd;
+	text-align: center;
+	font-size: 18px;
+	padding-top: 2vh;
+	font-weight: 600;
 }
-
+.contentBody{
+	margin-top: 0vh;
+}
+.mobileNavbar{
+	
+}
 .profilePicDiv{
 	margin-top: 3vh;
 }
@@ -39,12 +46,27 @@
 .threeDots{
 	margin-left: 3vw;
 }
+.contentBody{
+	background-color: #fff
+}
 .followersDiv{
 	display: none;
 }
-.followersDiv span{
-	margin-right: 2.5vw;
-	margin-bottom: 2vh
+.followewInfoMobile{
+	border-top: .5px solid #eaeaea;
+}
+.followewInfoMobile div{
+	text-align: center;
+	padding-top: .8vh;
+}
+.followewInfoMobile div p{
+	font-weight: 400;
+	font-size: 14.5px;
+	color: #888
+}
+.followewInfoMobile div span{
+	font-weight: 600;
+	font-size: 16px;
 }
 .userStatus{
 	margin-top: 0vh;
@@ -53,7 +75,7 @@
 }
 .postImages{
 	height:140px;
-	margin-top: .2vh;
+	margin-top: -2vh;
 	padding:0 !important;
 }
 .container1 {
@@ -62,5 +84,12 @@
 }
 .bottomLinks{
 	display: none;
+}
+.mobileFooter{
+	width: 20vw;
+	text-align: center;
+}
+.mobileFooterIcons{
+	
 }
 }

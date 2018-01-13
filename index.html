@@ -23,8 +23,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
     <script src="src/js/bootstrap.min.js"></script>
-</head>
 
+</head>
+<script>
+    $( document ).ready(function() {   
+    var scrollPosition = 0;
+    var index = 1;
+    window.addEventListener('scroll', function(e) {
+        scrollPosition = window.scrollY;
+        if (scrollPosition > 150 && index === 1) {
+            $('.instaLogoText').css('display','none');
+            $('.navbarLine').css('display','none');
+            $('.navbarSearch').css('margin-left','21.8vw');
+            $('.navbar').css('height','40px');
+            index = 2;
+        } else if (scrollPosition < 150 && index === 2){
+            $('.instaLogoText').css('display','inline');
+            $('.navbarLine').css('display','inline');
+            $('.navbarSearch').css('margin-left','12vw');
+            $('.navbar').css('height','60px');
+            index = 1;
+        }
+    });
+    window.addEventListener('resize', function() {
+        setTimeout(() => {
+            location.reload();
+        }, 500);
+    });
+});
+</script>
 <body>
     <nav class="navbar navbar-default forPCView">
         <div class="container-fluid headerColor">
@@ -43,7 +70,7 @@
                 <div class="exploreDiv">
                     <img alt="Explore" src="src/img/instaCompass.png" class="instaCompassImg">
                     <img alt="notification" src="src/img/instaHeart.png" class="instaNotificationImg">
-                    <img alt="Profile" src="src/img/instaProfile.png" class="instaProgileImg">
+                    <img alt="Profile" src="src/img/instaProfile.png" class="instaProfileImg">
                 </div>
             </div>
         </div>
@@ -53,6 +80,7 @@
             <p>Profile</p>
         </div>
     </div>
+
 
     <div class="container-fluid contentBody">
         <div class="row">
@@ -87,7 +115,7 @@
                                     <span><b>1,433 </b>posts</span>
                                     <span><b>589k </b>followers</span>
                                     <span><b>692 </b>followings</span><br>
-                                    <p class="userStatus"><b>Adobe</b> We're kicking off the new year on a clean slate and embracing the art of simplifying. Share your minimalistic work with <a href="#" style="color: #184877">#Adobe_LessIsMore. <b>adobe.ly/2D4S8Zu</b></a></p>
+                                    <p class="userStatus"><b>Adobe</b> We're kicking off the new year on a clean slate and embracing the art of simplifying. Share your minimalistic work with <a href="#">#Adobe_LessIsMore. <b>adobe.ly/2D4S8Zu</b></a></p>
                                 </div>
                             </div>
                         </div>
@@ -169,66 +197,67 @@
                                     </div>
                                 </div>
                             </div>
+                        
+                            <div class="col-sm-4 col-xs-12 container1">
+                                <img src="src/img/img3.jpg" alt="Avatar" class="postImages" >
+                                <div class="overlay">
+                                    <div class="te">
+                                        <span class="fa fa-heart imgIcons" style="margin-right: 1.5vw" >12,545</span>
+                                        <span><i class="fa fa-comment imgIcons" aria-hidden="true"></i>125</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 container1">
+                                <img src="src/img/img7.jpg" alt="Avatar" class="postImages" >
+                                <div class="overlay">
+                                    <div class="te">
+                                        <span class="fa fa-heart imgIcons" style="margin-right: 1.5vw" >12,545</span>
+                                        <span><i class="fa fa-comment imgIcons" aria-hidden="true"></i>125</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 container1">
+                                <img src="src/img/img6.jpg" alt="Avatar" class="postImages" >
+                                <div class="overlay">
+                                    <div class="te">
+                                        <span class="fa fa-heart imgIcons" style="margin-right: 1.5vw" >12,545</span>
+                                        <span><i class="fa fa-comment imgIcons" aria-hidden="true"></i>125</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 container1">
+                                <img src="src/img/img11.jpg" alt="Avatar" class="postImages" >
+                                <div class="overlay">
+                                    <div class="te">
+                                        <span class="fa fa-heart imgIcons" style="margin-right: 1.5vw" >12,545</span>
+                                        <span><i class="fa fa-comment imgIcons" aria-hidden="true"></i>125</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 container1">
+                                <img src="src/img/img1.jpg" alt="Avatar" class="postImages" >
+                                <div class="overlay">
+                                    <div class="te">
+                                        <span class="fa fa-heart imgIcons" style="margin-right: 1.5vw" >12,545</span>
+                                        <span><i class="fa fa-comment imgIcons" aria-hidden="true"></i>125</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 container1">
+                                <img src="src/img/img10.jpg" alt="Avatar" class="postImages" >
+                                <div class="overlay">
+                                    <div class="te">
+                                        <span class="fa fa-heart imgIcons" style="margin-right: 1.5vw" >12,545</span>
+                                        <span><i class="fa fa-comment imgIcons" aria-hidden="true"></i>125</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-4 col-xs-12 container1">
-                                <img src="src/img/img12.jpg" alt="Avatar" class="postImages" >
-                                <div class="overlay">
-                                    <div class="te">
-                                        <span class="fa fa-heart imgIcons" style="margin-right: 1.5vw" >12,545</span>
-                                        <span><i class="fa fa-comment imgIcons" aria-hidden="true"></i>125</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 container1">
-                                <img src="src/img/img9.jpg" alt="Avatar" class="postImages" >
-                                <div class="overlay">
-                                    <div class="te">
-                                        <span class="fa fa-heart imgIcons" style="margin-right: 1.5vw" >12,545</span>
-                                        <span><i class="fa fa-comment imgIcons" aria-hidden="true"></i>125</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 container1">
-                                <img src="src/img/img5.jpg" alt="Avatar" class="postImages" >
-                                <div class="overlay">
-                                    <div class="te">
-                                        <span class="fa fa-heart imgIcons" style="margin-right: 1.5vw" >12,545</span>
-                                        <span><i class="fa fa-comment imgIcons" aria-hidden="true"></i>125</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 container1">
-                                <img src="src/img/img8.jpg" alt="Avatar" class="postImages" >
-                                <div class="overlay">
-                                    <div class="te">
-                                        <span class="fa fa-heart imgIcons" style="margin-right: 1.5vw" >12,545</span>
-                                        <span><i class="fa fa-comment imgIcons" aria-hidden="true"></i>125</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 container1">
-                                <img src="src/img/img4.jpg" alt="Avatar" class="postImages" >
-                                <div class="overlay">
-                                    <div class="te">
-                                        <span class="fa fa-heart imgIcons" style="margin-right: 1.5vw" >12,545</span>
-                                        <span><i class="fa fa-comment imgIcons" aria-hidden="true"></i>125</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-xs-12 container1">
-                                <img src="src/img/img2.jpg" alt="Avatar" class="postImages" >
-                                <div class="overlay">
-                                    <div class="te">
-                                        <span class="fa fa-heart imgIcons" style="margin-right: 1.5vw" >12,545</span>
-                                        <span><i class="fa fa-comment imgIcons" aria-hidden="true"></i>125</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
 
 
                         <div class="row bottomLinks">
-                            <div class="col-sm-12">
+                            <div class="col-sm-10 col-sm-offset-1">
                                 <a href="#">ABOUT US</a>
                                 <a href="#">SUPPORT</a>
                                 <a href="#">BLOG</a>
@@ -245,19 +274,22 @@
                         </div>
                         <div class="row forMobileView mobileFooterDiv">
                             <div class="col-xs-2 mobileFooter">
-                                <img src="src/img/instaHome.png" class="mobileFooterIcons">
+                                <img src="src/img/instaHome.png" class="mobileFooterHome">
                             </div>
                             <div class="col-xs-2 mobileFooter">
-                                <img src="src/img/instaHome.png" class="mobileFooterIcons">
+                                <img src="src/img/instaSearch.png" class="mobileFooterSearch">
                             </div>
                             <div class="col-xs-2 mobileFooter">
-                                <img src="src/img/instaHome.png" class="mobileFooterIcons">
+                                <img src="src/img/instaUpload.png" class="mobileFooterUploads">
                             </div>
                             <div class="col-xs-2 mobileFooter">
-                                <img src="src/img/instaHome.png" class="mobileFooterIcons">
+                                <img src="src/img/instaHeart.png" class="mobileFooterHeart">
                             </div>
                             <div class="col-xs-2 mobileFooter">
-                                <img src="src/img/instaHome.png" class="mobileFooterIcons">
+                                <img src="src/img/instaProfile.png" class="mobileFooterUser">
+                            </div>
+                            <div class="col-xs-2 mobileFooter">
+                               
                             </div>
                         </div>
                     </div>
@@ -265,5 +297,7 @@
             </div>
         </div>
     </div>
+
+
 
 </body>

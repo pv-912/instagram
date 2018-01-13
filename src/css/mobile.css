@@ -75,7 +75,7 @@ body{
 }
 .postImages{
 	height:140px;
-	margin-top: 0vh;
+	margin-top: 3vh;
 	padding:0 !important;
 }
 .overlay{
@@ -84,28 +84,46 @@ body{
 .container1 {
 	padding:2px !important;
   width: 33.33%;
+  margin-top: -3vh
 }
 .bottomLinks{
 	display: none;
 }
 .mobileFooterDiv{
 	position: fixed;
-	top:97vh;
-	height: 6vh;
-	width: 100vw;
+	top:95vh;
+	height: 8vh;
+	padding-top: 1vh;
+	padding-left: 6vw;
+	/*width: 100vw;*/
 	background-color: #fff;
 	border-top: 1px solid #000;
-
-	left: 0
+	text-align: center;
+	/*left: 0*/
 }
 .mobileFooter{
 	width: 20vw;
 	text-align: center;
 	display: inline;
 }
-.mobileFooterIcons{
+.mobileFooterHome{
 	height: auto;
 	width: 9vw;
-	/*margin-bottom: 0vh;*/
+}
+.mobileFooterSearch{
+	height: auto;
+	width: 7vw;
+	margin-top: 1vh;
+}.mobileFooterUploads{
+	height: auto;
+	margin-top: -1.8vh;
+	width: 15vw;
+}.mobileFooterHeart{
+	height: auto;
+	width: 9vw;
+	margin-top: .4vh
+}.mobileFooterUser{
+	height: auto;
+	width: 9vw;
 }
 }

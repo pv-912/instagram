@@ -44,7 +44,19 @@ a{
 	height: 40px;
     width: auto;
     display: inline;
-    margin-top:-20px;      
+    margin-top:-15px;      
+}
+.navbar{
+	width: 100vw;
+	height:60px;
+	position: fixed !important;
+	z-index: 10;
+    top: 0px;
+    background-color: #fff;
+    border-bottom:74px solid #000;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75) !important;
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
 }
 .headerColor{
 	background-color: #fff;
@@ -68,7 +80,7 @@ a{
     color: #262626;
     font-size: 16px;
     /*outline: none;*/
-    width: 15vw;
+    width: 16vw;
     padding: 2px 0px 2px 7vw;
     /*z-index: 2;	display: inline;*/
     background-color:#fafafa;
@@ -77,7 +89,7 @@ a{
 }
 .form-control-feedback{
 	position: absolute;
-    right: 8vw;
+    right: 9vw;
     line-height: 18px;
     pointer-events: none;
     color: #939393;
@@ -88,10 +100,16 @@ a{
 	margin-left:  17vw;
 }
 .instaCompassImg{
-	padding-right: 1.9vw
+	padding-right: 1.9vw;
+	cursor: pointer;
 }
 .instaNotificationImg{
-	padding-right: 1.9vw
+	padding-right: 1.9vw;
+	cursor: pointer;
+
+}
+.instaProfileImg{
+	cursor: pointer;
 }
 .navbar-default{
 	-webkit-box-shadow: none;
@@ -101,7 +119,7 @@ a{
 /*body*/
 .contentBody{
 	background-color: #fafafa;
-	margin-top: -3vh;
+	margin-top: 10.5vh;
 	padding: 1vw
 }
 
@@ -177,7 +195,12 @@ a{
 .userStatus{
 	margin-top: 3vh;
 	font-size: 16.5px;
-	word-spacing: 1.6px
+	word-spacing: 1.6px;
+	text-decoration:none;
+}
+.userStatus a {
+	text-decoration: none;
+	color: #184877
 }
 
 .copyright{
@@ -231,11 +254,37 @@ a{
 	margin-top: 10vh;
 	margin-bottom: 5vh
 }
-
+.bottomLinks div {
+	margin-top: 8vh
+}
 .bottomLinks div a{
 	color: #003484;
 	font-size: 12.3px;
 	font-weight: 600;
 	padding-left: .8vw;
 	letter-spacing: .3px
+}
+
+
+@media only screen and (max-width: 900px){
+
+.navbarSearch,
+.navbarSearchInput,
+.glyphicon-search {
+	display: none;
+}
+.exploreDiv{
+	margin-left:  15.8vw;
+}
+.instaCompassImg{
+	padding-right: 2vw;
+	margin-top: 3vh
+}
+.instaNotificationImg{
+	padding-right: 2vw;
+	margin-top: 3vh
+}
+.instaProgileImg{
+	margin-top: 3vh
+	
 }

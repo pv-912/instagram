@@ -75,8 +75,11 @@ body{
 }
 .postImages{
 	height:140px;
-	margin-top: -2vh;
+	margin-top: 0vh;
 	padding:0 !important;
+}
+.overlay{
+	height: 0
 }
 .container1 {
 	padding:2px !important;
@@ -85,11 +88,24 @@ body{
 .bottomLinks{
 	display: none;
 }
+.mobileFooterDiv{
+	position: fixed;
+	top:97vh;
+	height: 6vh;
+	width: 100vw;
+	background-color: #fff;
+	border-top: 1px solid #000;
+
+	left: 0
+}
 .mobileFooter{
 	width: 20vw;
 	text-align: center;
+	display: inline;
 }
 .mobileFooterIcons{
-	
+	height: auto;
+	width: 9vw;
+	/*margin-bottom: 0vh;*/
 }
 }
